@@ -21,7 +21,7 @@ services:
     image: grafana/oncall
     restart: always
     ports:
-      - "8080:8080"
+      - "8081:8081"
     command: sh -c "uwsgi --ini uwsgi.ini"
     environment: *oncall-environment
     volumes:
